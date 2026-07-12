@@ -1,4 +1,36 @@
-<form method="POST" enctype="multipart/form-data">
-    <input type="file" name="resume" accept=".pdf" required>
-    <button type="submit">Upload Resume</button>
-</form>
+{% extends "base.html" %}
+
+{% block title %}
+PrepForge | Upload
+{% endblock %}
+
+{% block content %}
+
+<section class="upload-container">
+
+    <h1>Resume Analyzer</h1>
+
+    <p>
+        Upload your resume and receive AI-powered feedback.
+    </p>
+
+    <form method="POST"
+          enctype="multipart/form-data">
+
+        <input
+            type="file"
+            name="resume"
+            accept=".pdf"
+            required>
+
+        <button type="submit">
+
+            Analyze Resume
+
+        </button>
+
+    </form>
+
+</section>
+
+{% endblock %}

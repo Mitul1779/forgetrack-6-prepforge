@@ -1,24 +1,27 @@
-<!DOCTYPE html>
-<html>
-<head>
-    ...
-</head>
+{% extends "base.html" %}
 
-<body>
+{% block title %}
+PrepForge | Analysis
+{% endblock %}
 
-    <main>
+{% block content %}
 
-        <h1>PrepForge</h1>
+<section class="analysis-container">
 
-        <p>Your AI resume analysis is ready.</p>
+    <h1>Analysis Report</h1>
 
-        <div class="analysis">
+    <div class="analysis-card">
 
-            {{ analysis | safe }}
+        {{ analysis|safe }}
 
-        </div>
+    </div>
 
-    </main>
+    <a href="{{ url_for('upload') }}">
 
-</body>
-</html>
+        Analyze Another Resume
+
+    </a>
+
+</section>
+
+{% endblock %}

@@ -1,34 +1,28 @@
-{% extends "layout.html" %}
+{% extends "base.html" %}
 
-{% block title %}PrepForge{% endblock %}
+{% block title %}
+PrepForge | Home
+{% endblock %}
 
 {% block content %}
 
-<nav class="navbar">
-    <div class="logo">PrepForge</div>
-
-    <ul class="nav-links">
-        <li><a href="#">Home</a></li>
-        <li><a href="#">Dashboard</a></li>
-        <li><a href="#">About</a></li>
-    </ul>
-</nav>
-
 <section class="hero">
 
-    <div class="hero-text">
+    <div class="hero-content">
 
-        <h1>Prepare Better.<br>Interview Smarter.</h1>
+        <h1>
+            Build a Resume That Gets Noticed.
+        </h1>
 
         <p>
-            Your AI-powered placement companion that analyzes resumes,
-            matches job descriptions, and helps you ace interviews.
+            PrepForge uses Google's Gemini AI to analyze your resume and provide
+            detailed feedback on strengths, weaknesses, ATS compatibility, and
+            actionable improvements to help you prepare for placements.
         </p>
 
-        <div class="buttons">
-            <a href="#" class="btn-primary">Get Started</a>
-            <a href="#" class="btn-secondary">Learn More</a>
-        </div>
+        <a href="{{ url_for('upload') }}" class="btn-primary">
+            Analyze My Resume
+        </a>
 
     </div>
 
@@ -37,32 +31,63 @@
 <section class="features">
 
     <div class="card">
-        <h2>📄 Resume Review</h2>
+
+        <h2>📄 AI Resume Analysis</h2>
+
         <p>
-            Get AI-powered feedback on your resume with actionable improvements.
+            Receive detailed feedback on your resume's content, structure,
+            clarity, and professional presentation.
         </p>
+
     </div>
 
     <div class="card">
-        <h2>🎯 JD Matching</h2>
+
+        <h2>🎯 ATS Optimization</h2>
+
         <p>
-            Compare your resume against job descriptions and identify missing skills.
+            Identify missing skills, improve ATS compatibility,
+            and increase your chances of getting shortlisted.
         </p>
+
     </div>
 
     <div class="card">
-        <h2>🎤 Interview Practice</h2>
+
+        <h2>💡 Actionable Suggestions</h2>
+
         <p>
-            Practice role-specific interview questions with personalized AI feedback.
+            Get practical recommendations and prioritized improvements
+            instead of generic resume advice.
         </p>
+
     </div>
 
 </section>
 
-<footer>
+<section class="about">
 
-    © 2026 PrepForge | Built with Flask & Gemini
+    <h2>How It Works</h2>
 
-</footer>
+    <div class="steps">
+
+        <div class="step">
+            <h3>1. Upload</h3>
+            <p>Upload your resume in PDF format.</p>
+        </div>
+
+        <div class="step">
+            <h3>2. Analyze</h3>
+            <p>PrepForge extracts the resume text and sends it to Gemini AI.</p>
+        </div>
+
+        <div class="step">
+            <h3>3. Improve</h3>
+            <p>Receive detailed feedback and implement the suggested improvements.</p>
+        </div>
+
+    </div>
+
+</section>
 
 {% endblock %}
