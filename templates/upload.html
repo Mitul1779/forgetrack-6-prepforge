@@ -14,8 +14,7 @@ PrepForge | Upload
         Upload your resume and receive AI-powered feedback.
     </p>
 
-    <form method="POST"
-          enctype="multipart/form-data">
+    <form method="POST" enctype="multipart/form-data">
 
         <input
             type="file"
@@ -23,14 +22,23 @@ PrepForge | Upload
             accept=".pdf"
             required>
 
-        <button type="submit">
-
+        <button type="submit" id="analyze-btn">
             Analyze Resume
-
         </button>
+
+        <p id="loading" >
+            Analyzing your resume... Please wait.
+        </p>
 
     </form>
 
 </section>
+
+<script>
+document.querySelector("form").addEventListener("submit", function () {
+    document.getElementById("analyze-btn").disabled = true;
+    document.getElementById("loading").style.display = "block";
+});
+</script>
 
 {% endblock %}

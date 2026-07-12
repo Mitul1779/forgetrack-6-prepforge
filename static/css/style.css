@@ -30,6 +30,13 @@ nav {
     padding: 1rem 0;
 }
 
+#loading {
+    display: none;
+    margin-top: 1rem;
+    color: #555;
+    font-weight: 500;
+}
+
 .logo {
     text-decoration: none;
     color: #2563eb;
