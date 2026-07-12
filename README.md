@@ -175,3 +175,11 @@ This project helped me learn and apply:
 - ForgeTrack
 
 ---
+
+# Reflection
+
+There are also a few of features that would be great to include if I had more time: I could compare the interview question responses to job descriptions, I would create an interview questions list directly from a job description, or I would parse the Gemini API output into a JSON object. What I can now state confidently that I'm able to do is, from an application scratch, design, build, and deploy a full application using the flask frameworks that incorporates routing, templating inheritance, file upload feature, interaction with external API's, managing env variables, handling application errors and debugging the issues in the same. it was more than just reading through the individual components tutorials - it was the way they interacted and fit together and i think i'm now confident to do anything more advanced from this type of python project.  
+
+With more time I could have added a feature that would have compared the interview questions to job description or generated an interview question list based on the job description, or I would have processed the output of the Gemini API to be a JSON object instead of markdown. I would have also spiffied up the UI and added a database to save the old resume results.  
+
+The most important takeaway from this project was confidence. Now, I can say with confidence that I can build an entire Flask application from the ground up - including routing, template inheritance, file uploads, integration of third party API’s, using environment variables, deploying the application, and debugging errors. It was more than simply reading the tutorials for each component individually - it was seeing how they spoke to each other that made it click, and now I feel ready to tackle any further, more advanced full-stack python projects! 
